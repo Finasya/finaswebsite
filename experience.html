@@ -1,0 +1,254 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience and Education</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin: 0;
+            padding: 0;
+            background-image: url('wallpaper5.jpg');
+            position: relative;
+            color: black;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: palevioletred;
+      color: antiquewhite;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+
+    /* Navigation Bar Styling */
+    nav {
+      background-color: lightpink;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: blanchedalmond;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Section Title */
+    #tajuk {
+      font-style: italic;
+      color: #555;
+      font-size: 1.4em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Experience Row */
+    .experience-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .experience-col {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      animation: zoomInContent 3s infinite;
+    }
+
+    /* Image Styling */
+    .experience-img {
+      width: 90%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: zoomInImage 3s infinite;
+    }
+
+    .experience-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-top: 15px;
+      color: #333;
+      animation: zoomInText 3s infinite;
+    }
+
+    /* Keyframes for Animations */
+    @keyframes zoomInContent {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+    @keyframes zoomInImage {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes zoomInText {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    .quote {
+      text-align: center;
+      font-style: oblique;
+      font-weight: bold;
+      margin: 40px auto;
+      font-size: 1.3rem;
+      color: black;
+    }
+
+    /* Education Section */
+    .education {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: floralwhite;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .education h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: black;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        font-size: 2em;
+      }
+
+      nav ul li a {
+        font-size: 1em;
+        padding: 10px 15px;
+      }
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: palevioletred;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 15px;
+      color: antiquewhite;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EXPERIENCE 💼</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contactme.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <div class="quote">
+    "The only source of knowledge is experience"
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="experience-row">
+      <div class="experience-col">
+        <img src="degift.jpg" alt="DeGIFT HOUSE Experience" class="experience-img">
+        <p class="experience-title">Cashier at DeGIFT HOUSE Putrajaya</p>
+      </div>
+      <div class="experience-col">
+        <img src="cahaya-hati.jpg" alt="Tadika Cahaya Hati Experience" class="experience-img">
+        <p class="experience-title">Substitute Teacher at Tadika Cahaya Hati Seri Kembangan</p>
+      </div>
+      <div class="experience-col">
+        <img src="majlis.jpg" alt="Majlis Daerah Tanah Merah Experience" class="experience-img">
+        <p class="experience-title">Industrial Training at Majlis Daerah Tanah Merah</p>
+      </div>
+      <div class="experience-col">
+        <img src="happy.png" alt="Happy Home Experience" class="experience-img">
+        <p class="experience-title">Cashier at Happy Home Seri Kembangan</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Fina's Website. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Added link for Pacifico font -->
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-image: url('wallpaper5.jpg');
+            margin: 0;
+            padding: 0;
+            background-color: mistyrose;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+      
+        header {
+            background-color: palevioletred;
+            color: antiquewhite;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background-color: lightpink;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: blanchedalmond;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2px 12px;
+            margin: 16px auto;
+            max-width: 800px;
+            border-radius: 7px;
+            box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+            background-color:floralwhite;
+        }
+
+        #home img {
+            width: 40%;
+            max-width: 200px;
+            border-radius: 30%;
+            margin-top: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+            border: 5px solid palevioletred;
+            animation: gempak-animation 6s infinite;
+        }
+
+        @keyframes gempak-animation {
+            0% {
+                transform: scale(1) rotate(0deg);
+            }
+            25% {
+                transform: scale(1.1) rotate(10deg);
+            }
+            50% {
+                transform: scale(1.1) rotate(-10deg);
+            }
+            75% {
+                transform: scale(1.1) rotate(5deg);
+            }
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        /* Added for exclusive text effect */
+        @keyframes text-glow {
+            0% {
+                text-shadow: 0 0 5px hotpink, 0 0 10px hotpink, 0 0 20px hotpink, 0 0 40px snow, 0 0 60px snow, 0 0 80px snow;
+            }
+            50% {
+                text-shadow: 0 0 10px hotpink, 0 0 20px hotpink, 0 0 40px snow, 0 0 80px snow, 0 0 120px snow, 0 0 150px snow;
+            }
+            100% {
+                text-shadow: 0 0 5px hotpink, 0 0 10px hotpink, 0 0 20px hotpink, 0 0 40px snow, 0 0 60px snow, 0 0 80px snow;
+            }
+        }
+
+        h2 {
+            font-size: 2em;
+            color:brown;
+            font-family: 'Pacifico', cursive; /* Applied Pacifico font to h2 */
+            animation: text-glow 4s infinite; /* New glowing effect */
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: black;
+        }
+
+        .button {
+            margin-top: 18px;
+            padding: 10px 18px;
+            font-size: 1em;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: palevioletred;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 15px;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO MY PERSONAL WEBSITE 🏠</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <div id="home" class="container">
+        <marquee behavior="scroll" direction="left">
+            <h2>🎀 Shafina's Website 🎀</h2>
+        </marquee>
+        <img src="C:\Users\user\Desktop\IMD318\fina.jpg" alt="A welcoming image">
+        <br><br>
+        <audio controls>
+            <source src="C:\Users\user\Desktop\IMD318\Arctic Monkeys - I Wanna Be Yours (Instrumental).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Hi, Thank you for visiting My Resume page :)</p>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fina's Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

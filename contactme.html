@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <style>
+    /* General Body Styles */
+    body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-image: url('wallpaper5.jpg');
+            margin: 0;
+            padding: 0;
+            background-color: mistyrose;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+      margin: 0;
+      padding: 0;
+      color: black;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: palevioletred;
+      color: antiquewhite;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+
+    /* Navigation Bar Styling */
+    nav {
+      background-color: lightpink;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: #777;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Contact Section Styles */
+    .contact-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: floralwhite;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    /* Main Picture with Floating Animation */
+    .floating-image {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Contact Details */
+    .contact-details {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .contact-details h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: mediumvioletred;
+    }
+
+    .contact-details p {
+      font-size: 1.2em;
+      color: black;
+      margin: 10px 0;
+    }
+
+    .contact-details p i {
+      margin-right: 10px;
+      color: hotpink;
+    }
+
+    .contact-details .social-icon {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .contact-details .social-icon img {
+      width: 20px;
+      height: 20px;
+      animation: none; /* Ensures no animation */
+    }
+
+    /* Contact Form */
+    .contact-form {
+      flex: 1;
+      padding: 20px;
+      text-align: center; /* Centers all content within the form */
+    }
+
+    .contact-form h3 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: mediumvioletred;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1.1em;
+      transition: border-color 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: mediumvioletred;
+    }
+
+    .contact-form button {
+      background-color: mediumvioletred;
+      color: pink;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1.1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: block;
+      margin: 0 auto; /* Centers the button */
+    }
+
+    .contact-form button:hover {
+      background-color: antiquewhite;
+      transform: translateY(-3px);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-details,
+      .contact-form {
+        padding: 15px;
+      }
+
+      .contact-details h2 {
+        font-size: 1.8em;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        font-size: 1em;
+      }
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: palevioletred;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 15px;
+      color: antiquewhite;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Contact Me 📞</h1>
+  </header>
+
+  <!-- Navigation Section -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contactme.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <!-- Left: Personal Image -->
+    <img src="shaf.jpg" alt="Your Image" class="floating-image">
+
+    <!-- Center: Contact Details -->
+    <div class="contact-details">
+      <h2>Tanah Merah, Kelantan</h2>
+      <p><i>&#x1F4DE;</i> Phone: +60 11-51708067</p>
+      <p><i>&#x2709;</i> Email: nurshafinaazaha@gmail.com</p>
+      <div class="social-icon">
+        <img src="instagram logo.jpg" alt="Instagram Logo">
+        <p>Instagram :</p>
+        <p><a href="https://www.instagram.com/invites/contact/?igsh=1c2zgc8zvx66f&utm_content=2i0pp5b" target="_blank">@nr.fyna__</a></p>
+      </div>
+      <p>If you have any inquiries, you can contact me!</p>
+    </div>
+
+    <!-- Right: Contact Form -->
+    <div class="contact-form">
+      <h3>Send Me a Message</h3>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Fina's Website. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>
